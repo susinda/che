@@ -86,12 +86,12 @@ npm is bundled with nodejs which can be downloaded from: http://nodejs.org/downl
 
 
 # JMS Replicated Failback Example
-If not already done, build the artemis-distribution, which prepares an extracted ActiveMQ Artemis distribution for use in this and (other) examples (For more information see the activemq-artemis-examples/artemis-distribution/README.md).  Navigate to the artemis-distribution directory and execute the below command :
-```
-mvn clean package
-```
- 
-To run the example, simply execute the below command from this directory.
+
+## Preparation
+If not already done, [Prepare the broker distribution](https://github.com/apache/activemq-artemis-examples?tab=readme-ov-file#prepare-the-broker-distribution).
+
+## Running the Example
+To run the example, simply execute the below command from this directory:
 ```
 mvn verify
 ```
