@@ -82,3 +82,20 @@ npm is bundled with nodejs which can be downloaded from: http://nodejs.org/downl
 * **Che Forums:** [https://www.eclipse.org/forums/index.php/t/787421/](https://www.eclipse.org/forums/index.php/t/787421/)
 * **Website:** [eclipse.org/che](https://eclipse.org/che)
 * **Che Project Management Page:** [https://projects.eclipse.org/projects/technology.che](https://projects.eclipse.org/projects/technology.che)
+* 
+
+
+# JMS Replicated Failback Example
+If not already done, build the artemis-distribution, which prepares an extracted ActiveMQ Artemis distribution for use in this and (other) examples (For more information see the activemq-artemis-examples/artemis-distribution/README.md).  Navigate to the artemis-distribution directory and execute the below command :
+```
+mvn clean package
+```
+ 
+To run the example, simply execute the below command from this directory.
+```
+mvn verify
+```
+
+This example demonstrates two servers coupled as a live-backup pair for high availability (HA) using replication and a client connection failing over from live to backup when the live broker is crashed and then back to the original live when it is restarted (i.e. "failback").
+
+For more information on ActiveMQ Artemis failover and HA, and clustering in general, please see the clustering section of the user manual.
